@@ -1,0 +1,10 @@
+{% extends 'main_calc/base.html' %}
+
+{% block login %}
+<form method="post">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <p><button type="submit" >Войти</button></p>
+</form>
+
+{% endblock %}
