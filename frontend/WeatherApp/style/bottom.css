@@ -1,0 +1,18 @@
+.card-left__bottom {
+    display: grid;
+    grid-template-rows: 95px 61px 33px;
+    gap: 9px;
+    font-weight: 700;
+    white-space: nowrap;
+}
+.card-left__bottom-temperature {
+    font-size: 50px;
+}
+.card-left__bottom-sun {
+    font-size: 30px;
+}
+@media screen and (max-width:1000px) {
+.card-left__bottom {
+    justify-items: center;
+}
+}

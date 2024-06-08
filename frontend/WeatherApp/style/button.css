@@ -1,0 +1,23 @@
+.card-right__button {
+    border: none;
+    margin-top: 69px;
+    display: grid;
+    grid-template-columns: min-content max-content;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    width: 415px;
+    height: 53px;
+    font-size: 20px;
+    font-weight: 600;
+    border-radius: 10px;
+    color: white;
+    background: linear-gradient(91deg, rgba(144, 217, 224, 0.90) 0.2%, rgba(84, 96, 230, 0.90) 100%);
+
+}
+@media screen and (max-width:1000px) {
+    .card-right__button {
+        width: 100%;
+        margin: 0;
+    }   
+}   

@@ -1,0 +1,56 @@
+*,*::before,*::after{
+    box-sizing: border-box;
+}
+
+
+
+:root {
+    --space-base: 4px;
+    --space-8: calc(2 * var(--space-base));
+    --space-12: calc(3 * var(--space-base));
+    --space-16: calc(4 * var(--space-base));
+    --whitec: #FFF;
+    --blackc: #000
+    
+}
+
+body {
+    
+    background-color: #343D4B;
+    color: var(--whitec);
+    width: 100vw;
+    height:100vh;
+    margin: 0px;
+    padding:0px;
+    font-size: 0.69444444vw;
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    display: flex;
+    background-color: #343D4B;
+    align-items: center;
+    justify-content: center;
+    font-family: Montserrat;
+    height:100%;
+}
+
+
+
+@media screen and (max-width:1000px) {
+    .container{
+        flex-direction: column;
+        width:100vw;
+        min-height:100vh
+    }
+    
+    
+}
+@media screen and(min-width:2000px){
+    .container{
+        height:auto;
+        width:100%;
+    }
+    
+}

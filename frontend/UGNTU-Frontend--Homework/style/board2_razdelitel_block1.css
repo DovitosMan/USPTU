@@ -1,0 +1,23 @@
+.b1str1 {
+    height:35px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 16px;
+}
+
+.b1text1 {
+    font-size: 2.8em;
+    font-weight: 700;
+    width: 275px;
+    height: 35px;
+    
+}
+.b2percent1{
+    color: var(--whitec);
+    text-align: right;
+    font-size: 2.8em;
+    font-weight: 500;
+    width: 153px;
+    height: 22px;
+    flex-shrink: 0;
+}

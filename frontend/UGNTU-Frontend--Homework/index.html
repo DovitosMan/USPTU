@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Приложение погоды</title>
+    <link rel ="stylesheet" href = "style.css">
+    <style>
+        @font-face {
+            font-family:Montserrat;
+            src: url(font/Montserrat-Medium.ttf);
+        }
+    </style>
+</head>
+<body>
+
+
+    <div class = "container">
+        <div class="modal closed" id="first">
+            <div class="modal-window">
+                <div>Select location</div>
+                <select class="select" id="city-select">
+                  
+                </select>
+                <div class="twobuttons">
+                <button class="btn js-close-modal">Cancel</button>
+                <button class="btn js-close-modal"> OK</button>
+                </div>
+            </div>
+            <div class="modal-overlay js-close-modal">
+    
+            </div>
+        </div>
+
+        <div class = "left-block">
+            <div class = "left-block__divider"> 
+                <div>
+                    <div class = "left-block__week">
+                        <span id="week"></span>
+                    </div>
+                    <div class="left-block__date">
+                        <span id="dateEl"></span>
+                    </div>
+                    <div class = "left-block__location">
+                        <div class ="left-block__location-mark" >
+                            <img src = "image/locationmark.png">
+                        </div>
+
+                        <div class = "left-block__location-place">
+                            <span id="city"></span>, <span id="country"></span>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <div>
+                    <div class = "left-block__weather-mark">
+                        <img src = "image/sunmark.svg">
+                    </div>
+                    <div class="left-block__temperature">   
+                        <span id="Temperature"></span>
+                    </div>
+                    <div class = "left-block__weather">
+                        <span id="WeatherEl"></span>
+                    </div>
+                </div>
+
+
+
+            </div>
+           
+            
+
+        </div>
+
+        <div class = "right-block"> 
+
+            <div class="right-block__divider">
+                
+                <div class="right-block__textblock">
+                    
+                    <div class = "right-block__textblock-str">
+                        <div class = "right-block__textblock__text">
+                            PRECIPITATION
+                        </div>
+                        <div class = "right-block__textblock__percent">
+                            <span id="first-percent"></span>
+                        </div>
+                    </div>
+                    <div class ="right-block__textblock-str">
+                        <div class = "right-block__textblock__text">
+                            HUMIDITY
+                        </div>
+                        <div class = "right-block__textblock__percent">
+                            <span id='second-percent'></span>
+                        </div>
+                    </div>
+                    <div class = "right-block__textblock-str">
+                        <div class = "right-block__textblock__text">
+                            WIND
+                        </div>
+                        <div class = "right-block__textblock__percent">
+                            <span id="WindPercent"></span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="right-block__weatherblock">
+                </div>
+                </div>
+                <button class="Main-btn js-open-modal" id="changelocbutt">
+                    <img src="image/locationmark.png" width="33px" height="33px">
+                    Change location
+            </button>
+                
+            </div>
+
+        </div>
+        
+    </div>
+    <script src="./app.js"></script>
+</body>
+</html>

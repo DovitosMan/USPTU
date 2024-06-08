@@ -1,0 +1,67 @@
+.btn {
+    border:none;
+    border-radius: 10px;
+    background: linear-gradient(91deg, rgba(144, 217, 224, 0.90) 0.2%, rgba(84, 96, 230, 0.90) 100%);
+    color: var(--whitec);
+    font-family: Montserrat;
+    font-size: 2em;
+    font-weight: 600;
+    opacity: 1;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: 12px;
+    gap: 12px;
+    cursor: pointer;
+}
+
+.btn:hover{
+    opacity:0.7;
+}
+
+.btn:hover{
+    opacity:0.7;
+}
+
+.btn--full-width {
+    width: 70%;
+}
+.Main-btn{
+    border:none;
+    border-radius: 10px;
+    background: linear-gradient(91deg, rgba(144, 217, 224, 0.90) 0.2%, rgba(84, 96, 230, 0.90) 100%);
+    color: var(--whitec);
+    font-family: Montserrat;
+    font-size: 2em;
+    font-weight: 600;
+    opacity: 1;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: 12px;
+    gap: 12px;
+    cursor: pointer;
+    width:70%;
+    font-size: calc(2*var(--space-12));
+}
+
+@media screen and (max-width:1000px) {
+.btn{
+    font-size: calc(2*(var(--space-12)));
+}}
+@media screen and (min-width:2000px) {
+    .Main-btn{
+        font-size:calc(3*var(--space-16))
+    }
+    
+}
+
+
+@media screen and (min-width:4000px){
+    .btn {
+        font-size: calc(4*(var(--space-16)));
+    }
+    .Main-btn{
+        font-size:calc(4*(var(--space-16)));
+    }
+}
