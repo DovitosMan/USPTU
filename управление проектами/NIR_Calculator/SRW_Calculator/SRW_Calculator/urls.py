@@ -23,7 +23,7 @@ from main_calc import views
 
 urlpatterns = [
     path("admin/", admin.site.urls),
-    path("main_calc/", include('main_calc.urls')),
+    path("", include('main_calc.urls')),
     path('users/', include('users.urls', namespace="users")),
 ]
 

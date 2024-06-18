@@ -87,7 +87,7 @@ function calculate () {
    
 }
 
-// запуск расчета 
+// запуск расчета
 const calcButton = document.querySelector('#calc-button')
 calcButton.addEventListener('click', function () {
   calculate()
